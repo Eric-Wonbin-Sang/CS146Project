@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>D-Art</title>
+
+    <style>
+        .top_navigation_bar {
+            background-color: lightblue;
+            text-align: center;
+            padding-top: 5px;
+        }
+        /* ------------------------------------------ */
+        .menu_buttons {
+            font-family: Arial;
+            background-color: #327ba8;
+            overflow: hidden;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .menu_buttons a {
+            float: center;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 30px 30px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .menu_buttons a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .menu_buttons a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* ------------------------------------------ */
+        .content_div {
+            background-color: lightblue;
+        }
+        /* ------------------------------------------ */
+        .current_auctions {
+            width:32%;
+            float:left;
+            padding: 12px;
+        }
+        .top_submissions {
+            width: 63%;
+            float:right;
+            align-content: right;
+        }
+        .current_auctions, .top_submissions {
+            text-align:center;
+            min-height:150px;
+            height:auto;
+            vertical-align:middle;
+            padding:8px;
+            padding-top: 15px;
+            
+        }
+        /* ------------------------------------------ */
+        a.header {
+            font-family: Arial;
+            float: center;
+            color: #000000;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        /* ------------------------------------------ */
+        .content_line {
+            height:2px;
+            width: 80%;
+            background-color:rgb(29, 106, 168)
+        }
+        /* ------------------------------------------ */
+        .auction_div {
+            padding: 5px;
+            background-color: rgb(182, 232, 255);
+            margin: 10px;
+        }
+        img.user_image {
+            width: 90%
+        }
+        .submission_div {
+            padding: 5px;
+            width: 25%;
+            background-color: rgb(182, 232, 255);
+            margin: 10px;
+            vertical-align:middle;
+            padding:8px;
+            float:left
+        }
+        .see_more_button {
+            cursor:pointer;
+            border: none;
+            width:120px; 
+            height:20px; 
+            padding: 6px;
+            background-image: url("images/general/see_more.png");
+            background-size: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="top_navigation_bar">
+        <img src="images/general/logo.png" alt="logo">
+        <div class="menu_buttons">
+            <a class="active" href="">Home</a>
+            <a href="">Trending</a>
+            <a href="">Recommended</a>
+            <a href="">My Profile</a>
+        </div>
+    </div>
+    <div content_div>
+        <div class="current_auctions">
+            <a class=header href="">Current Auctions</a>
+            <hr class="content_line"></hr>
+            <div class="auction_div">
+                <p style="text-align:left">
+                    <b>Image Title</b> by username
+                    <span style="float:right;">
+                        $25
+                    </span>
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="auction_div">
+                <p style="text-align:left">
+                    <b>Image Title</b> by username
+                    <span style="float:right;">
+                        $25
+                    </span>
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="auction_div">
+                <p style="text-align:left">
+                    <b>Image Title</b> by username
+                    <span style="float:right;">
+                        $25
+                    </span>
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <button class="see_more_button"></button>
+        </div>
+        <div class="vertical_div"></div>
+        <div class="top_submissions">
+            <a class=header href="">Top Submissions</a>
+            <hr class="content_line">
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+            <div class="submission_div">
+                <p style="text-align:center">
+                    <b>Image Title</b> by username
+                </p>
+                <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
