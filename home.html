@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <title>D-Art</title>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Trending</a>
+        <a href="#">Post</a>
+        <a href="#">My Profile</a>
+    </div>
+
+    <div class="top_div">
+        <span class=nav_button onclick="openNav()">&#9776; </span>
+        <img class=top_logo src="images/general/logo.png" alt="logo">
+        <div class="top_navigation_bar">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#trending">Trending</a>
+                <a href="#post">Post</a>
+                <a href="#my_profile">My Profile</a>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="row">
+        <div class="col-4 col-s-12">
+            <div class="current_auctions">
+
+                <a class=header href="">Current Auctions</a>
+
+                <hr class="content_line">
+
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+                
+                <button class="button see_more_button" onclick="alert('This is not implemented yet!')">See More</button>
+                
+            </div>
+        </div>
+        
+        <div class="col-8 col-s-12">
+            <div class="top_submissions">
+
+                <a class=header href="">Top Submissions</a>
+
+                <hr class="content_line">
+
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+                <div class="submission_div">
+                    <p class="submission_title"><b>Image Title</b> by username</p>
+                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                </div>
+
+                <button class="button see_more_button" onclick="alert('This is not implemented yet!')">See More</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>This is a project for CS 146 - Intro to Web Programming and Web Development.</p>
+    </div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</body>
+
+</html>
