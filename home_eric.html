@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles_eric.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css_dir/styles_eric.css">
+    <script src="script.js"></script>
     <title>D-Art</title>
 </head>
 
@@ -13,26 +14,25 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Trending</a>
+        <a href="home_eric.html">Home</a>
+        <a href="trending_will.html">Trending</a>
         <a href="auction_jonathan.html">Auctions</a>
-        <a href="#">Post</a>
+        <a href="post_zhenhan.html">Post</a>
         <a href="profile_timothy.html">My Profile</a>
     </div>
 
     <div class="top_div">
         <span class=nav_button onclick="openNav()">&#9776; </span>
         <img class=top_logo src="images/general/logo.png" alt="logo">
-        <div class="top_navigation_bar">
+        <nav class="top_navigation_bar">
             <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#trending">Trending</a>
+                <a class="active" href="home_eric.html">Home</a>
+                <a href="trending_will.html">Trending</a>
                 <a href="auction_jonathan.html">Auctions</a>
-                <a href="#post">Post</a>
+                <a href="post_zhenhan.html">Post</a>
                 <a href="profile_timothy.html">My Profile</a>
             </div>
-        </div>
-       
+        </nav>
     </div>
 
     <div class="row">
@@ -91,19 +91,9 @@
         </div>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
         <p>This is a project for CS 146 - Intro to Web Programming and Web Development.</p>
-    </div>
-
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
+    </footer>
 
 </body>
 
