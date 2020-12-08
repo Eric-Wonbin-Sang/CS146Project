@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -40,23 +45,53 @@
     <div class="vertical_align">
         <center>
 
-        <div class="ps_button_area">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/bin.png">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/cancelcircle.png">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/checkmark.png">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/copy.png">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/crop.png">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/droplet.png">
-            <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/enlarge.png">
-        </div>
+    
             
-        <div class="preview">
-            <img src="./images/user_images/images_zhenhan/shanghai1.jpeg" />
-        </div>
+        <div style="border:2px dashed #1f1e33;">
+            <p>Upload and Edit Your Picture
+            <input type="file" id="fileimg" onchange="UploadImg(this)" accept="image/*"/>
+            <input type="button" value="Hide Picture" onclick="document.getElementById('Img').style.display = 'none';"/>
+            <input type="button" value="Show Picture" onclick="document.getElementById('Img').style.display = 'block';"/>
+            <div class="ps_button_area">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/bin.png">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/cancelcircle.png">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/checkmark.png">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/copy.png">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/crop.png">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/droplet.png">
+                <img class ="tool_button" type="button" onmouseover="this.style.backgroundColor='#514e4e';" onmouseout="this.style.backgroundColor='';" src="./images/user_images/images_zhenhan/enlarge.png">
+            </div>
+             </p>
+             <img id="Img"/>
+             <div id="Div"></div>
+             
+         </div>
+        
+        
+
+         <hr />
+        
+         <script type="text/javascript">            
+             function UploadImg(obj) {
+                 var file = obj.files[0];
+         
+                 console.log(obj);console.log(file);
+         
+                 var reader = new FileReader();
+         
+                 
+                 reader.onload = function (e) {
+                     var img = document.getElementById("Img");
+                     img.src = e.target.result;
+                 }
+         
+                 reader.readAsDataURL(file)
+             }
+         </script>
         
         <div>
-            <input class ="ps_button"type="button" value="Select Files"  onmouseover="this.style.backgroundColor='#0b3b7a';" onmouseout="this.style.backgroundColor='';" style="background-image: url(/images/user_images/images_zhenhan/upload.png);">
-            <input class ="ps_button"type="button" value="Post" onmouseover="this.style.backgroundColor='#0b3b7a';" onmouseout="this.style.backgroundColor='';"style="background-image: url(/images/user_images/images_zhenhan/upload.png);">
+            <input class ="ps_button"type="button" value="Select Files"  onmouseover="this.style.backgroundColor='#0b3b7a';" onmouseout="this.style.backgroundColor='';" style="background-image: url(/images//user_images/images_zhenhan/upload.png);">
+            <input class ="ps_button"type="button" value="Post" onmouseover="this.style.backgroundColor='#0b3b7a';" onmouseout="this.style.backgroundColor='';"style="background-image: url(/images//user_images/images_zhenhan/upload.png);">
         </div>
         
         <div class="upload_history">
@@ -69,8 +104,8 @@
             <img class="images" src="./images/user_images/images_zhenhan/history 1.jpg" />
             <img class="images" src="./images/user_images/images_zhenhan/history 3.jpg" />
             <img class="left_right" src="./images/user_images/images_zhenhan/right1.png" />
-        </div>
-        </center>
+        </div>            
+    </center>
 
     </div>
 
