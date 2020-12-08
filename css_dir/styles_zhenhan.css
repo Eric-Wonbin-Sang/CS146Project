@@ -2,22 +2,27 @@
     
 }
 
+body {background-color:#add8e6}
+
 .ps_button_area{
-    width: 500px;
+    width: 1000px;
     margin-top: 20px;
-    background-color:#535353;
+    background-color:#1f1e33;
 }
 
 .ps_button{
-    height:30px;
-    width:120px;
+    height:40px;
+    width:140px;
     border-style: none;
     margin-top: 10px;
     margin-left: 80px;
     margin-right: 80px;
-    background-color: #4da1da;
+    background-color: #1665ca;
     border-radius: 5px;
-    color: #fefefe"
+    color: #fefefe;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font:bold ;
 }
 
 .tool_button{
@@ -31,23 +36,32 @@
 }
 
 .left_right{
-    height:100px;
+    height:106px;
 }
 
 .preview{
 }
 
 .upload_history{
-    background-color:#97FFFF;
+    background-color:#4da1da;
+    font-size: 25px;
+    color:#fefefe;
+    font: bold;
+    height:40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 150%;
 }
 
 .image_area{
-   
+    
 }
 
 .images{
     height:100px;
     width:200px;
     border-style:solid;
-    border-color: red;
+    border-color: rgb(0, 0, 0);
 }

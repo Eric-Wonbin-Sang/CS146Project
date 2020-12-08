@@ -1,0 +1,98 @@
+/* CSS file for Dart Profile Page */
+h1 {
+    background-color: #8cc6e7;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: Arial Black;
+    font-style: italic;
+    font-size: 50px;
+    margin-right: 0px;  
+    
+}
+nav {
+    background-color:  #1c87c4;
+    overflow: hidden;
+    margin-right: 0px;  
+}
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    align-content: center;
+    left: 40%; 
+    padding: 14px 16px;
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Cambria;
+    margin-right: 0px;  
+}
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+
+.profile {
+    box-shadow: 0 4px 8px 0 rgba(28, 179, 238, 0.2);
+    background-color: #8cc6e7;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.details {
+    color: black;
+    font-size: 18px;
+  }
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #1c87c4;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+main {
+    margin-bottom: 0px; 
+    margin-right: 0px;        
+    background-color: #ccdee9;   
+    padding: 5px; 
+}
+
+article.lists {
+    font-family: sans-serif;
+    position: relative;
+    left: 25%;
+}
+article.about {
+    width: 800px;
+    font-family: sans-serif;
+    position: relative;
+    left: 25%;
+}
+
+img.profile {
+  width: 100%;
+}
+
+img {
+  border: 5px solid #000;
+}
