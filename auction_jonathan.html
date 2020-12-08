@@ -1,39 +1,208 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title> AUCTION PAGE </title>
-  <meta charset ="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type= "text/css" href="css_dir/styles_jonathan.css">
-</head>
+<title> AUCTION PAGE </title>
+<meta charset ="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css_dir/styles_eric.css" media="screen"/>
+<link rel="stylesheet" type= "text/css" media="screen" href="css_dir/styles_jonathan.css">
+<script src="js_dir/script_jonathan.js"></script>
 
+</head>
 <body>
 
-  <h2> AUCTION PAGE </h2>
 
-  <div class = "banner">
-    <img class="banner-image" src="images/user_images/projectimage3.jpeg"
+
+
+
+
+  <div id="mySidenav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home_eric.html">Home</a>
+    <a href="trending_will.html">Trending</a>
+    <a href="auction_jonathan.html">Auctions</a>
+    <a href="post_zhenhan.html">Post</a>
+    <a href="profile_timothy.html">My Profile</a>
+</div>
+
+<div class="top_div">
+    <span class=nav_button onclick="openNav()">&#9776; </span>
+    <img class=top_logo src="images/general/logo.png" alt="logo">
+    <nav class="top_navigation_bar">
+        <div class="topnav">
+            <a href="home_eric.html">Home</a>
+            <a href="trending_will.html">Trending</a>
+            <a href="auction_jonathan.html">Auctions</a>
+            <a href="post_zhenhan.html">Post</a>
+            <a class="active" href="profile_timothy.html">My Profile</a>
+        </div>
+    </nav>
+</div>
+
+
+
+
+
+<h1> AUCTION PAGE </h1>
+
+
+<p>this web page, you will be able to view Thousands of user created Art going up for auction, Please help these local artists and suppourt them now</p>
+
+<h1>ART</h1>
+
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/user_images/images_jonathan/art1.jpg" style="width:100%">
   </div>
 
-  <p>this web page, you will be able to view Thousands of user created Art going up for auction, Please help these local artists and suppourt them now</p>
-
-  <div class="row">'
-
-    <div class="column">
-      <img src="images/user_images/art1.jpeg" alt="Snow" style="width:100%">
-    </div>
-
-    <div class="column">
-      <img src="images/user_images/art2.jpeg" alt="Forest" style="width:100%">
-    </div>
-
-    <div class="column">
-      <img src="images/user_images/art3.jpeg" alt="Mountains" style="width:100%">
-    </div>
-    
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/user_images/images_jonathan/art2.jpg" style="width:100%">
   </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/user_images/images_jonathan/art3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/user_images/images_jonathan/art4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/user_images/images_jonathan/art5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/user_images/images_jonathan/art6.jpg" style="width:100%">
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/user_images/images_jonathan/art1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Romance">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/user_images/images_jonathan/art2.jpg" style="width:100%" onclick="currentSlide(2)" alt="love">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/user_images/images_jonathan/art3.jpg" style="width:100%" onclick="currentSlide(3)" alt="abstract">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/user_images/images_jonathan/art4.jpg" style="width:100%" onclick="currentSlide(4)" alt="sentience">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/user_images/images_jonathan/art5.jpg" style="width:100%" onclick="currentSlide(5)" alt="sacrafice">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/user_images/images_jonathan/art6.jpg" style="width:100%" onclick="currentSlide(6)" alt="heartbreak">
+    </div>
+  </div>
+</div>
+
+
+<h2>BIDS AND PROGRESS</h2>
+
+
+<div>
+  <h2>Romance</h2>
+<form>
+  <input type="text" id="number" value="60"/>
+  <input type="button" onclick="incrementValue()" value="Place bid" />
+</form>
+<label for="file">Bidding progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+
+</div>
+<div>
+  <h2>Love</h2>
+<form>
+  <input type="text" id="number" value="400"/>
+  <input type="button" onclick="incrementValue2()" value="Place bid" />
+</form>
+<label for="file">Bidding progress:</label>
+<progress id="file" value="32" max="100"> 70% </progress>
+
+</div>
+
+<div>
+  <h2>Abstract</h2>
+<form>
+  <input type="text" id="number" value="68"/>
+  <input type="button" onclick="incrementValue3()" value="Place bid" />
+</form>
+<label for="file">Bidding progress:</label>
+<progress id="file" value="32" max="100"> 20% </progress>
+
+</div>
+
+<div>
+  <h2>Sentience</h2>
+<form>
+  <input type="text" id="number" value="60"/>
+  <input type="button" onclick="incrementValue4()" value="Place bid" />
+</form>
+<label for="file">Bidding progress:</label>
+<progress id="file" value="32" max="100"> 50% </progress>
+
+</div>
+
+<div>
+  <h2>Sacrafice</h2>
+<form>
+  <input type="text" id="number" value="46"/>
+  <input type="button" onclick="incrementValue5()" value="Place bid" />
+</form>
+<label for="file">Bidding progress:</label>
+<progress id="file" value="32" max="100"> 90% </progress>
+
+</div>
+
+<div>
+  <h2>Heartbreak</h2>
+<form>
+  <input type="text" id="number" value="34566"/>
+  <input type="button" onclick="incrementValue6()" value="Place bid" />
+</form>
+<label for="file">Bidding progress:</label>
+<progress id="file" value="60" max="100"> 70% </progress>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <p>This is a project for CS 146 - Intro to Web Programming and Web Development.</p>
+</footer>
+
 
 </body>
-
 </html>
