@@ -180,12 +180,13 @@ p.number_of_likes {
 img.user_image {
     width: 100%
 }
-img.like_button
+input.like_button
 {
     width: 3%;
     float: right;
     
 }
+
 
 .button {
     border: none;
@@ -210,3 +211,10 @@ img.like_button
     font-size: 12px;
     padding: 15px;
   }
+
+h2
+{
+    color: black;
+
+    background-color: #ade5ff;
+}

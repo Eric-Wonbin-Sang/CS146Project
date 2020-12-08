@@ -1,0 +1,53 @@
+.vertical_align{
+    
+}
+
+.ps_button_area{
+    width: 500px;
+    margin-top: 20px;
+    background-color:#535353;
+}
+
+.ps_button{
+    height:30px;
+    width:120px;
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #4da1da;
+    border-radius: 5px;
+    color: #fefefe"
+}
+
+.tool_button{
+    height:20px;
+    width:20px;
+    border-style: none;
+}
+
+.tool_button_area{
+
+}
+
+.left_right{
+    height:100px;
+}
+
+.preview{
+}
+
+.upload_history{
+    background-color:#97FFFF;
+}
+
+.image_area{
+   
+}
+
+.images{
+    height:100px;
+    width:200px;
+    border-style:solid;
+    border-color: red;
+}

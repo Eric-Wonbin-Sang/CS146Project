@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="css_dir/styles_eric.css">
-    <script src="script.js"></script>
+    <script src="js_dir/script_eric.js"></script>
     <title>D-Art</title>
 </head>
 
 <body>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home_eric.html">Home</a>
         <a href="trending_will.html">Trending</a>
         <a href="auction_jonathan.html">Auctions</a>
@@ -35,58 +35,101 @@
         </nav>
     </div>
 
+    <div id="generic_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="close_modal()">X</span>
+            <p><b>Image Title</b> by username</p>
+            <img id=modal_image src="" alt="logo">
+            <ul class="modal_list">
+                <li class="modal_li" ><a onclick="alert('This is not implemented yet!')">Like</a></li>
+                <li class="modal_li" ><a onclick="alert('This is not implemented yet!')">Comment</a></li>
+                <li class="modal_li" ><a href="auction_jonathan.html">Buy</a></li>
+                <li class="modal_li" ><a onclick="alert('This is not implemented yet!')">Share</a></li>
+            </ul>
+            
+            <div class="comment_flex_container">
+                <div style="width: 10%; margin: auto;"><input class="comment_profile_img" type="image" src="images/general/blank_profile.png" onclick=""></div>
+                <div style="width: 20%;"><p style="text-align: center; line-height: 100%;">User</p></div>
+                <div style="width: 70%;"><p style="text-align: center; line-height: 100%;">This is an example comment.</p></div>  
+            </div>
+
+            <div class="comment_flex_container">
+                <div style="width: 10%; margin: auto;"><input class="comment_profile_img" type="image" src="images/general/blank_profile.png" onclick=""></div>
+                <div style="width: 20%;"><p style="text-align: center; line-height: 100%;">User</p></div>
+                <div style="width: 70%;"><p style="text-align: center; line-height: 100%;">This is an example comment.</p></div>  
+            </div>
+
+            <div class="comment_flex_container">
+                <div style="width: 10%; margin: auto;"><input class="comment_profile_img" type="image" src="images/general/blank_profile.png" onclick=""></div>
+                <div style="width: 20%;"><p style="text-align: center; line-height: 100%;">User</p></div>
+                <div style="width: 70%;"><p style="text-align: center; line-height: 100%;">This is an example comment.</p></div>  
+            </div>
+
+            <div class="comment_flex_container">
+                <div style="width: 10%; margin: auto;"><input class="comment_profile_img" type="image" src="images/general/blank_profile.png" onclick=""></div>
+                <div style="width: 20%;"><p style="text-align: center; line-height: 100%;">User</p></div>
+                <div style="width: 70%;"><p style="text-align: center; line-height: 100%;">This is an example comment.</p></div>  
+            </div>
+
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-4 col-s-12">
             <div class="current_auctions">
 
-                <a class=header href="">Current Auctions</a>
+                <a class=header href="DNE_eric.html">Current Auctions</a>
 
                 <hr class="content_line">
 
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (1).jpg" onclick="show_modal(this)">
                 </div>
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (2).jpg" onclick="show_modal(this)">
                 </div>
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (3).jpg" onclick="show_modal(this)">
                 </div>
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (4).jpg" onclick="show_modal(this)">
                 </div>
                 
-                <button class="button see_more_button" onclick="alert('This is not implemented yet!')">See More</button>
-                
+                <form action="DNE_eric.html">
+                    <button class="button see_more_button">See More</button>
+                </form>
+
             </div>
         </div>
         
         <div class="col-8 col-s-12">
             <div class="top_submissions">
 
-                <a class=header href="">Top Submissions</a>
+                <a class=header href="DNE_eric.html">Top Submissions</a>
 
                 <hr class="content_line">
 
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (5).jpg" onclick="show_modal(this)">
                 </div>
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (6).png" onclick="show_modal(this)">
                 </div>
                 <div class="submission_div">
                     <p class="submission_title"><b>Image Title</b> by username</p>
-                    <img class="user_image" src="images/user_images/img_lights.jpg" alt="user photo">
+                    <input class="user_image" type="image" src="images/user_images/images_eric/source_art (7).png" onclick="show_modal(this)">
                 </div>
 
-                <button class="button see_more_button" onclick="alert('This is not implemented yet!')">See More</button>
-
+                <form action="DNE_eric.html">
+                    <button class="button see_more_button">See More</button>
+                </form>
             </div>
         </div>
     </div>
